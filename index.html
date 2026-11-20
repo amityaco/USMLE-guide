@@ -163,6 +163,9 @@ figure figcaption { margin-top: .4rem; font-size: .85rem; color: var(--ink2); }
 .zoom { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
 .zoom img { display: block; width: 100%; height: auto; border: 1px solid var(--rule); border-radius: var(--r); background: #fff; }
 li .zoom { max-width: 34rem; }
+.video { max-width: 34rem; margin: 1rem 0 .25rem; }
+.video .frame { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: var(--wash); border: 1px solid var(--rule); border-radius: var(--r); }
+.video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 
 /* ---- tables --------------------------------------------------------------- */
 .tablewrap { overflow-x: auto; margin: 1rem 0; }
@@ -296,6 +299,7 @@ dialog img { display: block; max-width: 96vw; max-height: 86vh; border-radius: v
   .main { max-width: none; padding: 0; }
   .sec { break-inside: avoid-page; }
   .chev { display: none; }
+  .video .frame { display: none; }
   a { color: inherit; }
 }
 
@@ -324,7 +328,6 @@ dialog img { display: block; max-width: 96vw; max-height: 86vh; border-radius: v
   <h1>איך התכוננתי ל-USMLE Step 1</h1>
   <p class="when">נכתב בנובמבר 2026</p>
   <p class="who"><b>עמית יעקובוביץ'</b>
-    <a class="p" href="tel:+972546792505">054-679-2505</a>
     <a class="p" href="mailto:amit.yaco@gmail.com">amit.yaco@gmail.com</a></p>
   <div class="disc"><b>חשוב:</b> זו חוויה אישית שלי, ובשום אופן לא המלצה גורפת איך כדאי להתנהל. מומלץ להבין איך הכי מתאים לכל אחד ללמוד.</div>
   <figure class="path">
@@ -387,7 +390,10 @@ dialog img { display: block; max-width: 96vw; max-height: 86vh; border-radius: v
 <li><b>פרמקולוגיה, מיקרוביולוגיה וקליניקה:</b> Sketchy (Pharm &amp; Micro, וגם את התכנים המורחבים של פנימית וכו').</li>
 <li><b>Boards &amp; Beyond:</b> רופא שמסביר את כל הנושאים. השתמשתי בו רק לנושאים שהרגשתי בהם חלש במיוחד, או אחרי שאלות שלא הבנתי בהן כלום ממה שקרה בתחום הזה – ואז שמעתי את ההרצאה הספציפית. ממה שאני יודע, יש כאלה שלומדים את כל ההרצאות שלו.</li>
 <li><b>ביוכימיה:</b> רק מ-<a href="https://www.youtube.com/@DirtyMedicine" rel="noopener" target="_blank">Dirty Medicine</a> (ערוץ ביוטיוב) – כולם לומדים רק ממנו, יש לו שיטות טובות לשינון של ביוכימיה.</li>
-<li><b>שינון וזכירה:</b> <a href="https://www.ankihub.net/step-deck" rel="noopener" target="_blank">AnKing</a> (Anki) – השתמשתי בו כדי לשנן נושאים ומידע שלא הכרתי.</li>
+<li><b>שינון וזכירה:</b> <a href="https://www.ankihub.net/step-deck" rel="noopener" target="_blank">AnKing</a> (Anki) – השתמשתי בו כדי לשנן נושאים ומידע שלא הכרתי.<figure class="video">
+<div class="frame"><iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/dih2D1dwqkw?rel=0" title="Intro to Anki &amp; The AnKing Step Deck &amp; AnkiHub | Medical School Anki Beginner Tutorial"></iframe></div>
+<figcaption>מבוא ל-Anki ולחבילת AnKing, מתוך הערוץ של AnKing (באנגלית). <a class="p" href="https://www.youtube.com/watch?v=dih2D1dwqkw">פתיחה ביוטיוב</a></figcaption>
+</figure></li>
 <li><b>יוטיוב (לזמנים מתים):</b> סרטוני שאלות של <a href="https://www.youtube.com/channel/UCU7QPxZjoJDx8Fes04GbpzA" rel="noopener" target="_blank">Mehlman Medical</a> במהירות כפולה (x2) – מעולה כשמשעמם ורוצים רק להקשיב לאיך הוא חושב ופותר שאלות.</li>
 </ul></div></details></section>
 <section class="sec" id="qbank"><details open><summary><h2>AMBOSS או UWorld?</h2><span class="chev" aria-hidden="true"></span></summary><div class="sec-body"><ul>
